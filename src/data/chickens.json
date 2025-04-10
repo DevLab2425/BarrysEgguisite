@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Janice",
+    "dob": "2025-04-01",
+    "breed": "Silver Laced Wyandotte",
+    "coloring": "White and black"
+  },
+  {
+    "name": "Patsy",
+    "dob": "2025-04-01",
+    "breed": "Barred Rock",
+    "coloring": "Black with white spots",
+    "identifiers": []
+  },
+  {
+    "name": "Dolly",
+    "dob": "2025-04-01",
+    "breed": "Americana",
+    "coloring": "Brown with black"
+  },
+  {
+    "name": "Gladys",
+    "dob": "2025-04-01",
+    "breed": "Silver Laced Wyandotte",
+    "coloring": "White and black"
+  },
+  {
+    "name": "Madonna",
+    "dob": "2025-04-01",
+    "breed": "Americana",
+    "coloring": "Gold / Tan"
+  },
+  {
+    "name": "Whitney",
+    "dob": "2025-04-01",
+    "breed": "Barred Rock",
+    "coloring": "Black with white spots"
+  }
+]
