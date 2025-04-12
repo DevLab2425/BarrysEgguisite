@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <div className="content-wrapper">
           <h1>Barry&apos;s Egguisite Chicken Brood!</h1>
-          <div className="showcase-wrapper">
+          {/* <div className="showcase-wrapper">
             <ul className="showcase-items">
               {chickens.map((chick, index) => {
                 return (
@@ -45,7 +45,7 @@ export default function RootLayout({
                 )
               })}
             </ul>
-          </div>
+          </div> */}
           <hr />
           <div className="showcase-stage">
           {children}

@@ -57,22 +57,29 @@ h1, h2, h3, h4, h5 {
     padding: 2em 0;
 
     > li {
-      border: 10px solid;
-      border-color: currentColor red;
-      flex-basis: 49%;
-      align-content: center;
-      display: block;
-      padding: .5em 0;
+      flex-basis: 45%;
+      margin-bottom: 3em;
       }
 
     a {
-      display: block;
+      // display: block;
     }
   }
 }
 
+:popover-open {
+  width: 80vw;
+  height: 65vh;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+::backdrop {
+  backdrop-filter: blur(3px);
+}
+
 .showcase-stage{
-  margin: 1em 0;
+  margin: 1em auto;
 
  dd {
     border-top: 2px double;
