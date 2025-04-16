@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import chickens from '../data/chickens.json';
 import Image from 'next/image';
 
-const IMAGE_PATH_BASE = 'assets/images';
+const IMAGE_PATH_BASE = 'BarrysEgguisite/assets/images';
 
 type Chicken = {
   id: string,
