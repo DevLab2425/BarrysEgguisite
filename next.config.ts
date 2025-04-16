@@ -1,14 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: '/BarrysEgguisite/out',
+  basePath: '/BarrysEgguisite',
   output: 'export',
   skipTrailingSlashRedirect: true,
   images: {
     unoptimized: true ,
     localPatterns: [
       {
-        pathname: '/BarrysEgguisite/out/assets/images/**/**',
+        pathname: '/BarrysEgguisite/assets/images/**/**',
       }
     ]
   }

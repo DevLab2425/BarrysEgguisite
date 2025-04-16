@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import chickens from '../data/chickens.json';
 import Image from 'next/image';
 
+const IMAGE_PATH_BASE = 'assets/images';
+
 type Chicken = {
   id: string,
   name: string,
@@ -28,7 +30,7 @@ export default function Home() {
             return (
               <li key={index} className="showcase-item">
                 <button popoverTarget="showcase" popoverTargetAction="show" onClick={() => setActiveChick(chick)}>
-                  <Image src={`/BarrysEgguisite/out/assets/images/${chick?.id}/${chick?.images?.[0]}.jpg`} width="200" height="200" alt={`Image of ${chick?.name}`} />
+                  <Image src={`/${IMAGE_PATH_BASE}/${chick?.id}/${chick?.images?.[0]}.jpg`} width="200" height="200" alt={`Image of ${chick?.name}`} />
                   <span>{chick.name}</span>
                 </button>  
               </li>
@@ -48,7 +50,7 @@ export default function Home() {
           </div>
         </div>
         <div className="showcase-body">
-          <Image src={`/BarrysEgguisite/out/assets/images/${activeChick?.id}/${activeChick?.images?.[0]}.jpg`} width="200" height="200" alt={`Image of ${activeChick?.name}`} />
+          <Image src={`/${IMAGE_PATH_BASE}/${activeChick?.id}/${activeChick?.images?.[0]}.jpg`} width="200" height="200" alt={`Image of ${activeChick?.name}`} />
         </div>
         <div>
           <dl>
@@ -84,7 +86,7 @@ export default function Home() {
         <div>
           <h3> Additional Photos</h3>
           {activeChick?.images?.slice(1).map((img, index) => {
-            return <Image key={index} src={`/BarrysEgguisite/out/assets/images/${activeChick?.id}/${img}.jpg`} width="200" height="200" alt={`Image of ${activeChick?.name}`} />
+            return <Image key={index} src={`/${IMAGE_PATH_BASE}/${activeChick?.id}/${img}.jpg`} width="200" height="200" alt={`Image of ${activeChick?.name}`} />
           })}
         </div>
       </div>
