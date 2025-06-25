@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .showcase-wrapper{
-  // display: flex;
   > * {
     flex: 1 1 auto;
   }
@@ -105,7 +104,6 @@ h1, h2, h3, h4, h5 {
 :popover-open {
   width: 80vw;
   height: 65vh;
-  // padding: 0 10px;
   border-radius: 10px;
 }
 
@@ -115,7 +113,6 @@ h1, h2, h3, h4, h5 {
 
 .showcase-stage{
   margin: 1em auto;
-  // padding: .5em 1.5em;
   height: 90vh;
   max-width: 768px;
 

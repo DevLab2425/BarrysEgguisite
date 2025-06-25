@@ -27,7 +27,7 @@
     "breed": "Americana",
     "coloring": "Black",
     "id": "am_01",
-    "images": ["4847", "4850"],
+    "images": ["4836", "4837"],
     "influence": "Gladys Knight",
     "promotionDate": "2025-06-06T00:00:00.000Z",
     "layingDate": "TBD"
@@ -49,7 +49,7 @@
     "breed": "Americana",
     "coloring": "Gold / Tan",
     "id": "am_02",
-    "images": ["4836", "4837"],
+    "images": ["4847", "4850"],
     "influence": "Stevie Nicks",
     "promotionDate": "2025-06-06T00:00:00.000Z",
     "layingDate": "TBD"

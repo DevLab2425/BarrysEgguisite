@@ -127,8 +127,7 @@ export default function Home() {
                 const {key: label, value } = normalizeBioData(key, activeChick);
                 return (
                   <span key={index}>
-                    <dt>{label}</dt>
-                    {/* <dd>{activeChick[key].toString()}</dd> */}
+                    <dt>{label}</dt>  
                     <dd>{value}</dd>
                   </span>
                 )
@@ -136,40 +135,12 @@ export default function Home() {
             )}
           </dl>
         </div>
-        {/* {activeChick?.breed && 
-            <>
-              <dt>Breed</dt>
-              <dd>{activeChick?.breed}</dd>
-            </>}
-            
-            {activeChick?.dob && (
-              <>
-                <dt>Birthday (<em>approx.</em>)</dt>
-                <dd>
-                  {new Date(activeChick?.dob).toLocaleDateString( undefined, {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </dd>
-              </>
-            )}
-            
-            {activeChick?.coloring && (
-              <>
-                <dt>Coloring</dt>
-                <dd>{activeChick?.coloring}</dd>
-              </>
-            )} */}
-            
-
-        <div>
-          <h3> Additional Photos</h3>
+        {activeChick?.images && <div>
+          <h3>Additional Photos</h3>
           {activeChick?.images?.slice(1).map((img, index) => {
             return <Image key={index} src={`/${IMAGE_PATH_BASE}/${activeChick?.id}/${img}.jpg`} width="200" height="200" alt={`Image of ${activeChick?.name}`} />
           })}
-        </div>
+        </div>}
       </div>
     </>
   );
