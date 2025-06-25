@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     background: lightskyblue;
     height: 10vh;
-    padding: 0 1em 0 0;
+    padding: 0 2em 0 0;
   }
 
   .showcase-banner{
@@ -133,8 +133,8 @@ h1, h2, h3, h4, h5 {
       justify-content: center;
       align-items: center;
       display: flex;
-      position: absolute;
-      top: 2em;
+      position: relative;
+      top: -2em;
       flex-direction: column;
       gap: 1em;
       img {
@@ -147,7 +147,6 @@ h1, h2, h3, h4, h5 {
   .showcase-body {
     display: grid;
     justify-content: center;
-    margin-top: 12em;
   }
 
   dd {
