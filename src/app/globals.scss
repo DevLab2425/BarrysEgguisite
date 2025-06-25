@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .showcase-wrapper{
-  // display: flex;
   > * {
     flex: 1 1 auto;
   }
@@ -65,7 +64,9 @@ h1, h2, h3, h4, h5 {
       margin-bottom: 3em;
       position: relative;
 
-       button {
+       button.modal-trigger {
+        cursor: pointer;
+
         img{border-radius: 50%;}
 
         span {
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5 {
           transform: translateY(-2.5em) translateX(-50%);
           color: black;
           font-weight: bold;
-          background: wheat;
+          background: lightskyblue;
           width: 100%;
           border-radius: 9px;
           box-shadow: 0px 0px 9px 2px black;
@@ -103,7 +104,6 @@ h1, h2, h3, h4, h5 {
 :popover-open {
   width: 80vw;
   height: 65vh;
-  padding: 0 10px;
   border-radius: 10px;
 }
 
@@ -113,28 +113,46 @@ h1, h2, h3, h4, h5 {
 
 .showcase-stage{
   margin: 1em auto;
-  padding: .5em 1.5em;
   height: 90vh;
   max-width: 768px;
 
   .showcase-head {
-    display: flex;
     align-items: anchor-center;
-    justify-content: space-between;
+    justify-content: end;
+    display: flex;
+    background: lightskyblue;
+    height: 10vh;
+    padding: 0 2em 0 0;
+  }
+
+  .showcase-banner{
+    display: flex;
+    justify-content: center;
+
+    .avatar{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: relative;
+      top: -2em;
+      flex-direction: column;
+      gap: 1em;
+      img {
+        border-radius: 50%;
+        box-shadow: 0 0 0 15px lightskyblue;
+      }
+    }
   }
 
   .showcase-body {
-    display: flex;
-    gap: 2em;
-    border-bottom: 1px solid;
-    padding-bottom: 2em;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
   }
 
- dd {
+  dd {
     border-top: 2px double;
     font-weight: bold;
     line-height: 1.5em;
     margin-bottom: 1em;
-}
+  }
 }
